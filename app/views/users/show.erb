@@ -1,0 +1,6 @@
+<h1> Hey, <%= @user.name %>! </h1>
+
+<h3> Here's what you have in your cart: </h3>
+<% @user.items.each do |item| %>
+<p> <%= item.name %> </p>
+<% end %>
