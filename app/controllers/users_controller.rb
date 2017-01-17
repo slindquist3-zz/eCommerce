@@ -8,4 +8,9 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def create
+    @user.save
+    redirect_to `/users/#{@user.id}`
+  end
+
 end
